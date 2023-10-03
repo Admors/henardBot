@@ -4,8 +4,6 @@ Un Bot [Discord.js](https://discord.js.org/#/) qui a pour but de servir de base 
 
 ## Objectifs
 ```
-↻ Un code optimisé mais lisible pour le peuple.
-↻ Une environnement sains sans bugge
-↻ La liberté de pouvoir excercé sur son bot
+↻ Un environnement sain sans bugge
 ```
 ## Contributions
