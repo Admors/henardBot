@@ -1,6 +1,6 @@
 require("dotenv").config();
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
-const { consolaTime, consolaLogs } = require("./timeConsole")
+const { consolaTime, consolaLogs } = require("./Fonctions/timeConsole")
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
