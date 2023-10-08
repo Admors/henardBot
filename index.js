@@ -4,10 +4,10 @@ const { consolaTime, consolaLogs } = require("./Fonctions/timeConsole")
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
-process.on('exit', code => console.log(`Le processus s'est arrêté avec le code: ${code}`));
-process.on('uncaughtException', (err, origin) => console.log(`UNCAUGHT_EXECPTION: ${err}`, `Origine: ${origin}`));
-process.on('unhandledRejection', (reason, promise) => console.log(`UNHANDLED_REJECTION: ${reason}\n-----\n`, promise));
-process.on('warning', (...args) => console.log(...args));
+process.on('exit', code => consolaTime(`Le processus s'est arrêté avec le code: ${code}`));
+process.on('uncaughtException', (err, origin) => consolaTime(`UNCAUGHT_EXECPTION: ${err}`, `Origine: ${origin}`));
+process.on('unhandledRejection', (reason, promise) => consolaTime(`UNHANDLED_REJECTION: ${reason}\n-----\n`, promise));
+process.on('warning', (...args) => consolaTime(...args));
 
 ["commands", "cooldowns", "buttons", "selects"].forEach(x => { client[x] = new Collection(); });
 
